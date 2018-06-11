@@ -25,4 +25,4 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-mainClassName = 'com.frabef.twtls.App'
+mainClassName = 'com.frabef.twtls.ms.App'
