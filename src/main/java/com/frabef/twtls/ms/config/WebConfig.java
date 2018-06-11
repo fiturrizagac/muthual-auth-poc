@@ -1,15 +1,19 @@
-package com.frabef.twtls;
+package com.frabef.twtls.ms.config;
 
-import com.frabef.twtls.httpclient.GetHtml;
+import com.frabef.twtls.services.clients.http.GetHtml;
 import com.frabef.twtls.services.commons.TwoWayTlsOkHttpClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+@ComponentScan(
+    basePackages = {"com.frabef.twtls.services.http"}
+    )
 @Configuration
 public class WebConfig {
 

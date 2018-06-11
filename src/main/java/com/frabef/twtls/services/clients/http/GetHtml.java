@@ -1,4 +1,4 @@
-package com.frabef.twtls.httpclient;
+package com.frabef.twtls.services.clients.http;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
