@@ -1,0 +1,6 @@
+version: '2'
+services:
+  nginx:
+    extends:
+      file: ./docker/nginx/nginx-service.yml
+      service: nginx
