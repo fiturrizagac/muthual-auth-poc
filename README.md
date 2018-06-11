@@ -10,6 +10,7 @@ Password
 
 ca.key -> topsecretcakey
 client.p12 -> topsecretclientp12
+client-ssl.fraber.com.jks -> topsecretjks
 
 Commands
 
