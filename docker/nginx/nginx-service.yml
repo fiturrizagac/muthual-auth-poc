@@ -5,7 +5,7 @@ services:
     ports:
       - "443:443"
     volumes:
-      - ./conf/mutual.tls.default.conf:/etc/nginx/conf.d/default.conf
-      - ./certs/ca/ca.crt:/opt/ca.crt
+      - ./conf/v2.mutual.tls.default.conf:/etc/nginx/conf.d/default.conf
+      - ./certs/client/v2/ca/client.ca.crt:/opt/client.ca.crt
       - ./certs/server/client-ssl.fraber.com.key:/opt/client-ssl.fraber.com.key
       - ./certs/server/client-ssl.fraber.com.crt:/opt/client-ssl.fraber.com.crt
