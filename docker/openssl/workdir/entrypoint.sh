@@ -41,3 +41,11 @@ openssl req \
     -in "certificates/client/caclient.csr" \
     -out "certificates/client/caclient.crt" \
     -days 365
+
+echo " ---> Generate P12 Client certificate"
+openssl pkcs12 \
+    -export \
+    -out "certificates/client/client.p12" \
+    -inkey "certificates/client/caclient.key" \
+    -in "certificates/client/caclient.crt" \
+    -passout pass:clientp12
