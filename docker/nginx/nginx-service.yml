@@ -6,6 +6,6 @@ services:
       - "443:443"
     volumes:
       - ./conf/mutual.tls.default.conf:/etc/nginx/conf.d/default.conf
-      - ../openssl/workdir/certificates/client/caclient.crt:/opt/ca.crt
-      - ../openssl/workdir/certificates/server/caserver.key:/opt/client-ssl.fraber.com.key
-      - ../openssl/workdir/certificates/server/caserver.crt:/opt/client-ssl.fraber.com.crt
+      - ../sslgenerator/workdir/certificates/client/caclient.crt:/opt/ca.crt
+      - ../sslgenerator/workdir/certificates/server/caserver.key:/opt/client-ssl.fraber.com.key
+      - ../sslgenerator/workdir/certificates/server/caserver.crt:/opt/client-ssl.fraber.com.crt

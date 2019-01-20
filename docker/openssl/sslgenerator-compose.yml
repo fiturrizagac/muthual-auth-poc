@@ -1,7 +1,0 @@
-version: '2.1'
-
-services:
-  sslgenerator:
-    build: .
-    volumes:
-     - ./workdir/:/opt/

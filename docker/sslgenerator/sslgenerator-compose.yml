@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+  sslgenerator:
+    build: .
+    volumes:
+     - ./workdir/:/opt/
+    healthcheck:
+      test: ["CMD", "[ -f /opt/client/caclient.p12]"]
+      interval: 1m30s
+      timeout: 10s
+      retries: 10
