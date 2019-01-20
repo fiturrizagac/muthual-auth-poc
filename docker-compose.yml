@@ -1,0 +1,18 @@
+version: '2.1'
+services:
+  nginx:
+    extends:
+      file: ./docker/nginx/nginx-service.yml
+      service: nginx
+    depends_on:
+      sslgenerator:
+        condition: service_healthy
+  sslgenerator:
+    extends:
+      file: ./docker/openssl/sslgenerator-compose.yml
+      service: sslgenerator
+    healthcheck:
+      test: ["CMD", "[ -f /opt/client/caclient.crt]"]
+      interval: 1m30s
+      timeout: 10s
+      retries: 10
