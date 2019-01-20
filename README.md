@@ -1,11 +1,3 @@
-Pages
-
-https://blog.codeship.com/how-to-set-up-mutual-tls-authentication/
-
-https://www.javacodegeeks.com/2016/03/set-mutual-tls-authentication.html
-
-https://dzone.com/articles/mutual-problems
-
 Password
 
 ca.key -> topsecretcakey
